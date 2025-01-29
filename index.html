@@ -2,8 +2,9 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solamedia | استوديو الصوت الاحترافي</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Solamedia | تسجيل الصوت الاحترافي</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,28 +12,51 @@
             margin: 20px;
             padding: 10px;
         }
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+        img {
+            width: 150px;
+            margin-bottom: 10px;
+        }
         .button {
             display: inline-block;
-            margin-top: 20px;
+            margin-top: 10px;
             padding: 10px 20px;
             background-color: #3498db;
             color: #fff;
             text-decoration: none;
             border-radius: 5px;
+            transition: background 0.3s;
         }
         .button:hover {
             background-color: #2980b9;
+        }
+        section {
+            margin-top: 20px;
+            padding: 20px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Solamedia 🎙️</h1>
-        <p>مرحبًا بك في استوديو تسجيل الصوت الاحترافي!</p>
+        <img src="Logo.png" alt="شعار استوديو صولا ميديا">
+        <h1>مرحبًا بك في استوديو صولا ميديا</h1>
+        <h3>تسجيل الصوت الاحترافي</h3>
     </header>
 
     <section>
-        <a href="client.html" class="button">صفحة استلام الملفات</a>
+        <h2>الملفات الصوتية</h2>
+        <p>يمكنك تنزيل أو تشغيل الملفات الصوتية الخاصة بك:</p>
+        <ul>
+            <li><a href="sample.mp3" class="button" download>تحميل ملف MP3</a></li>
+            <li><a href="sample.wav" class="button" download>تحميل ملف WAV</a></li>
+        </ul>
     </section>
+
+    <footer>
+        <p>&copy; 2024 استوديو صولا ميديا - جميع الحقوق محفوظة</p>
+    </footer>
 </body>
 </html>
